@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="300.0" minWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gekn.productivityapp.DeleteProjectDialogController">
+    <children>
+        <VBox alignment="BOTTOM_RIGHT" layoutX="131.0" layoutY="151.0" prefHeight="150.0" prefWidth="390.0" spacing="100.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <children>
+            <HBox alignment="CENTER" spacing="5.0">
+               <children>
+                  <Label text="Delete" />
+                  <Label fx:id="projectName" text="PROJECT" />
+               </children>
+            </HBox>
+
+                <HBox alignment="BOTTOM_RIGHT" spacing="10.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#closeStage" text="Cancel" />
+                        <Button mnemonicParsing="false" onAction="#btnDeleteProject" text="Delete" />
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets right="30.0" />
+                    </padding>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
